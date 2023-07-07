@@ -1,0 +1,14 @@
+goos:
+goarch:
+pkg:
+BenchmarkJoinPath/#00        20000000	     26.12 ns/op
+BenchmarkJoinPath/#00        20000000	     25.58 ns/op
+BenchmarkJoinPath/#00        20000000	     25.72 ns/op
+BenchmarkJoinPath/#00        20000000	     26.10 ns/op
+BenchmarkJoinPath/#00        20000000	     26.07 ns/op
+BenchmarkJoinPath/#00        20000000	     26.18 ns/op
+BenchmarkJoinPath/#00        20000000	     26.24 ns/op
+BenchmarkJoinPath/#00        20000000	     26.48 ns/op
+BenchmarkJoinPath/#00        20000000	     26.40 ns/op
+BenchmarkJoinPath/#00        20000000	     26.35 ns/op
+PASS

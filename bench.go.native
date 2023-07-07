@@ -1,14 +1,5 @@
 goos: darwin
 goarch: arm64
-pkg: github.com/stealthrocket/benchmarks/go
-BenchmarkJoinPath/#00         	74086524	        15.93 ns/op
-BenchmarkJoinPath/#00         	73317702	        16.05 ns/op
-BenchmarkJoinPath/#00         	72088849	        16.07 ns/op
-BenchmarkJoinPath/#00         	73806979	        16.08 ns/op
-BenchmarkJoinPath/#00         	72449727	        16.10 ns/op
-BenchmarkJoinPath/#00         	71868478	        16.10 ns/op
-BenchmarkJoinPath/#00         	71547817	        16.17 ns/op
-BenchmarkJoinPath/#00         	73275918	        16.24 ns/op
-BenchmarkJoinPath/#00         	72221898	        16.07 ns/op
-BenchmarkJoinPath/#00         	72532384	        16.11 ns/op
+pkg: github.com/stealthrocket/wasm-benchmarks/go
+BenchmarkJoinPath/#00         	74059035	        15.99 ns/op
 PASS

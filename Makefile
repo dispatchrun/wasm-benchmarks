@@ -1,23 +1,37 @@
-.PHONY: all native wasmedge wasmtime wazero
+.PHONY: all clean native wasmedge wasmtime wazero
 
 test ?= go
 bench ?= .
 count ?= 1
+ifeq ($(test), c)
+args = test $(count)
+else
 args = -test.bench '$(bench)' -test.count '$(count)'
-src = $(wildcard go/*.go)
+endif
+src.c = c/main.c
+src.go = go/main.go
 
 all: go.wasm tinygo.wasm
 
-go.test: $(src)
+clean:
+	rm -f *.test *.wasm
+
+c.test: $(src.c)
+	zig cc -O2 -o $@ $<
+
+c.wasm: $(src.c)
+	zig cc -O2 --target=wasm32-wasi -o $@ $<
+
+go.test: $(src.go)
 	gotip test -c -o $@ ./go
 
-go.wasm: $(src)
+go.wasm: $(src.go)
 	GOOS=wasip1 GOARCH=wasm gotip test -c -o $@ ./go
 
 tinygo.test:
 	tinygo test -opt 2 -c -o $@ ./go
 
-tinygo.wasm: $(src)
+tinygo.wasm: $(src.go)
 	tinygo test -opt 2 -c -o $@ -target wasi ./go
 
 %.so: %.wasm
