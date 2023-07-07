@@ -40,6 +40,9 @@ tinygo.wasm: $(src.go)
 native: $(test).test
 	./$(test).test $(args) | tee bench.$(test).native
 
+node: $(test).wasm
+	node rt.js $(test).wasm $(args) | tee bench.$(test).node
+
 wasmedge: $(test).so
 	wasmedge $(test).so $(args) | tee bench.$(test).wasmedge
 
