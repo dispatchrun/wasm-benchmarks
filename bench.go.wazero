@@ -1,0 +1,14 @@
+goos: wasip1
+goarch: wasm
+pkg: github.com/stealthrocket/benchmarks/go
+BenchmarkJoinPath/#00         	 5066142	       241.6 ns/op
+BenchmarkJoinPath/#00         	 5011442	       238.5 ns/op
+BenchmarkJoinPath/#00         	 4995264	       238.8 ns/op
+BenchmarkJoinPath/#00         	 5009484	       238.6 ns/op
+BenchmarkJoinPath/#00         	 5003568	       238.1 ns/op
+BenchmarkJoinPath/#00         	 4991462	       238.9 ns/op
+BenchmarkJoinPath/#00         	 5021269	       238.9 ns/op
+BenchmarkJoinPath/#00         	 5030746	       238.9 ns/op
+BenchmarkJoinPath/#00         	 5017285	       238.6 ns/op
+BenchmarkJoinPath/#00         	 5015677	       238.9 ns/op
+PASS

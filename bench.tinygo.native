@@ -1,0 +1,11 @@
+BenchmarkJoinPath/#00        	 8146329	       136.0 ns/op
+BenchmarkJoinPath/#00        	 9294405	       127.3 ns/op
+BenchmarkJoinPath/#00        	 9326847	       128.5 ns/op
+BenchmarkJoinPath/#00        	 9400336	       127.0 ns/op
+BenchmarkJoinPath/#00        	 9328970	       126.8 ns/op
+BenchmarkJoinPath/#00        	 9338372	       126.7 ns/op
+BenchmarkJoinPath/#00        	 9319130	       126.6 ns/op
+BenchmarkJoinPath/#00        	 9317254	       126.9 ns/op
+BenchmarkJoinPath/#00        	 9316881	       126.8 ns/op
+BenchmarkJoinPath/#00        	 9320587	       126.5 ns/op
+PASS
